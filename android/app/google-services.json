@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1097672297188",
+    "project_id": "smart-pstu",
+    "storage_bucket": "smart-pstu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097672297188:android:f60bf5ffb39c2f53993af1",
+        "android_client_info": {
+          "package_name": "com.example.sohoj_kart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097672297188-5ic37nb87iiu3um94h0844m3cb1ckgeu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sohoj_kart",
+            "certificate_hash": "92a41417c985daa91909facc681ddccb7b5b771c"
+          }
+        },
+        {
+          "client_id": "1097672297188-n7rrs57voug3u3vequba2nifc0b2ttmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxE1sJir5HdbRL0UZLMTbPHe2qJKS3hUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097672297188-n7rrs57voug3u3vequba2nifc0b2ttmp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097672297188-jfd27nbgdcogq6a70fvijlmegqfvjf9h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sohojKart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

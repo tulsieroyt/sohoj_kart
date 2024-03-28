@@ -1,0 +1,68 @@
+SohojKart is a e-commerce mobile app
+
+ Work details:
+ Date: 31 January 2024
+ Video Number 4: Duration 13:50
+ Description: Have Completed formatter -- formatter not completed due to not proper visualization
+
+
+Date: 1 February 204
+Video Number: 5 Duration: 7:00
+
+
+Date: 2 February 2024
+Video: 7: Duration: 6:27 minute
+
+Date: 2 february 2024
+Video: 7; Duration: end
+Video start from video no: 8
+
+
+Date: 20 February 2024
+Video: 8: Duration: end
+Video will start from video no: 9
+
+Date: 9 March 2024
+Video: 13, Duration: end
+Video will start from video no: 14 --> Here is an issue: Have to migrate the file to primary_continer to the reusable widget folder
+
+
+Date: 13 March 2024
+Video: 17 Duration:end
+Video will start from video: 18
+
+
+Date: 14 March 2024
+Video: 20 Duration: 7:10
+Video will start from video:7:10
+
+Date: 15 march 2024
+Video: 22 Complete
+Video will start from 23
+
+
+12:31 ---> rest
+
+Date: 16 Mar 2024
+Video: 29 Duration: 9: 57 ---> rest
+-
+
+Date: 17 mar 2024
+Video: 32, Duration: end
+Video will start from 33--> Firebase setup
+
+
+Date: 19 Mar 2024
+Video: 41 Duration: end -->
+Video will start from video 41:
+
+Date: 20 Mar 2024
+Video:43 Duration: end
+Video will start from video -- 44
+
+
+Date: 25 Mar 2024
+Video: 52 Duration 24:50 Something
+Video will start from the rest -->
+
+
