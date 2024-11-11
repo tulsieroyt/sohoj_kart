@@ -399,8 +399,183 @@ class DummyDataUploadScreen extends StatelessWidget {
               }
             ];
 
+            final productsDatas = [
+              {
+                "Brand": {
+                  "Id": "2",
+                  "Name": "Adidas",
+                  "Image": "https://dummyimage.com/300.png/09f/fff",
+                  "IsFeatured": true,
+                  "ProductCount": 90
+                },
+                "CategoryId": "2",
+                "Description": "Blue Adidas Running Shoes",
+                "Title": "Adidas Running Shoes",
+                "Images": [
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff"
+                ],
+                "IsFeatured": true,
+                "Price": 120,
+                "ProductAttributes": [
+                  {
+                    "Name": "Color",
+                    "Values": ["Blue", "Grey", "Black"]
+                  },
+                  {
+                    "Name": "Size",
+                    "Values": ["EU 40", "EU 42", "EU 44"]
+                  }
+                ],
+                "ProductType": "ProductType.variable",
+                "ProductVariations": [
+                  {
+                    "AttributeValues": {"Color": "Blue", "Size": "EU 40"},
+                    "Description": "This is a Product for Blue Adidas Running Shoes",
+                    "Id": "2",
+                    "Image": "https://dummyimage.com/300.png/09f/fff",
+                    "Price": 118,
+                    "SKU": "ADS001-01",
+                    "SalePrice": 110,
+                    "Stock": 40
+                  },
+                  {
+                    "AttributeValues": {"Color": "Grey", "Size": "EU 42"},
+                    "Description": "This is a Product for Grey Adidas Running Shoes",
+                    "Id": "2",
+                    "Image": "https://dummyimage.com/300.png/09f/fff",
+                    "Price": 118,
+                    "SKU": "ADS001-02",
+                    "SalePrice": 110,
+                    "Stock": 40
+                  }
+                ],
+                "SKU": "ADS001",
+                "SalePrice": 35,
+                "Stock": 20,
+                "Thumbnail": "https://dummyimage.com/300.png/09f/fff"
+              },
+              {
+                "Brand": {
+                  "Id": "5",
+                  "Name": "Under Armour",
+                  "Image": "https://dummyimage.com/300.png/09f/fff",
+                  "IsFeatured": false,
+                  "ProductCount": 65
+                },
+                "CategoryId": "5",
+                "Description": "Under Armour Running Shoes",
+                "Title": "Under Armour Running Shoes",
+                "Images": [
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff"
+                ],
+                "IsFeatured": false,
+                "Price": 95,
+                "ProductAttributes": [
+                  {
+                    "Name": "Color",
+                    "Values": ["Black", "Grey", "White"]
+                  },
+                  {
+                    "Name": "Size",
+                    "Values": ["EU 37", "EU 39", "EU 41"]
+                  }
+                ],
+                "ProductType": "ProductType.variable",
+                "ProductVariations": [
+                  {
+                    "AttributeValues": {"Color": "Black", "Size": "EU 37"},
+                    "Description": "This is a Product for Black Under Armour Running Shoes",
+                    "Id": "5",
+                    "Image": "https://dummyimage.com/300.png/09f/fff",
+                    "Price": 93,
+                    "SKU": "UARM001-01",
+                    "SalePrice": 85,
+                    "Stock": 35
+                  },
+                  {
+                    "AttributeValues": {"Color": "White", "Size": "EU 41"},
+                    "Description": "This is a Product for White Under Armour Running Shoes",
+                    "Id": "5",
+                    "Image": "https://dummyimage.com/300.png/09f/fff",
+                    "Price": 93,
+                    "SKU": "UARM001-02",
+                    "SalePrice": 85,
+                    "Stock": 35
+                  }
+                ],
+                "SKU": "UARM001",
+                "SalePrice": 20,
+                "Stock": 22,
+                "Thumbnail": "https://dummyimage.com/300.png/09f/fff"
+              },
+              {
+                "Brand": {
+                  "Id": "6",
+                  "Name": "Asics",
+                  "Image": "https://dummyimage.com/300.png/09f/fff",
+                  "IsFeatured": true,
+                  "ProductCount": 55
+                },
+                "CategoryId": "6",
+                "Description": "Grey Asics Trail Shoes",
+                "Title": "Asics Trail Shoes",
+                "Images": [
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff",
+                  "https://dummyimage.com/300.png/09f/fff"
+                ],
+                "IsFeatured": true,
+                "Price": 130,
+                "ProductAttributes": [
+                  {
+                    "Name": "Color",
+                    "Values": ["Grey", "Blue", "Black"]
+                  },
+                  {
+                    "Name": "Size",
+                    "Values": ["EU 42", "EU 44", "EU 46"]
+                  }
+                ],
+                "ProductType": "ProductType.variable",
+                "ProductVariations": [
+                  {
+                    "AttributeValues": {"Color": "Grey", "Size": "EU 42"},
+                    "Description": "This is a Product for Grey Asics Trail Shoes",
+                    "Id": "6",
+                    "Image": "https://dummyimage.com/300.png/09f/fff",
+                    "Price": 128,
+                    "SKU": "ASCS001-01",
+                    "SalePrice": 120,
+                    "Stock": 25
+                  },
+                  {
+                    "AttributeValues": {"Color": "Black", "Size": "EU 46"},
+                    "Description": "This is a Product for Black Asics Trail Shoes",
+                    "Id": "6",
+                    "Image": "https://dummyimage.com/300.png/09f/fff",
+                    "Price": 128,
+                    "SKU": "ASCS001-02",
+                    "SalePrice": 120,
+                    "Stock": 25
+                  }
+                ],
+                "SKU": "ASCS001",
+                "SalePrice": 32,
+                "Stock": 18,
+                "Thumbnail": "https://dummyimage.com/300.png/09f/fff"
+              }
+            ];
+
+
             final database = FirebaseFirestore.instance;
-            for (var product in productsData) {
+            for (var product in productsDatas) {
               final newDocRef = database.collection('Products').doc();
               await newDocRef.set(product);
             }

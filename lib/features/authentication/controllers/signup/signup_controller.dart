@@ -22,7 +22,7 @@ class SignupController extends GetxController {
   final password = TextEditingController(); //Controller for email input
   final phoneNumber = TextEditingController(); //Controller for email input
   GlobalKey<FormState> signUpFormKey =
-      GlobalKey<FormState>(); //Form key for validation
+  GlobalKey<FormState>(); //Form key for validation
 
   ///Sign up
   Future<void> signup() async {
@@ -60,7 +60,7 @@ class SignupController extends GetxController {
 
       //Register user in the Firebase authentication and save user data in the firebase
       final userCredential =
-          await AuthenticationRepository.instance.registerWithEmailAndPassword(
+      await AuthenticationRepository.instance.registerWithEmailAndPassword(
         email.text.trim(),
         password.text.trim(),
       );

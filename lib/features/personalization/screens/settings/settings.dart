@@ -7,6 +7,8 @@ import 'package:sohoj_kart/common/widgets/list_tile/sk_settings_menu_tile.dart';
 import 'package:sohoj_kart/common/widgets/list_tile/sk_user_profile_tile.dart';
 import 'package:sohoj_kart/common/widgets/texts/section_heading.dart';
 import 'package:sohoj_kart/data/repositories/authentication/authentication_repository.dart';
+import 'package:sohoj_kart/dummy/dummy_data_upload_screen.dart';
+import 'package:sohoj_kart/dummy_upload_screen.dart';
 import 'package:sohoj_kart/features/personalization/screens/address/address_screen.dart';
 import 'package:sohoj_kart/features/shop/screens/cart/cart_screen.dart';
 import 'package:sohoj_kart/features/shop/screens/order/order_screen.dart';
@@ -62,7 +64,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                     title: 'My Cart',
                     subtitle: 'Add, remove products and move to checkout',
-                    onTap: () => Get.to(() => const CartScreen()),
+                    onTap: () => Get.to(() => const CartScreen( )),
                   ),
                   SKSettingsMenuTile(
                     icon: Iconsax.bag_tick,
@@ -104,7 +106,9 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.document_upload,
                     title: 'Load Data',
                     subtitle: 'Upload data to your cloud Firebase',
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(const DummyUploadScreen());
+                    },
                   ),
                   SKSettingsMenuTile(
                     icon: Iconsax.location,

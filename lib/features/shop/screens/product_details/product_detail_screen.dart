@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:sohoj_kart/common/widgets/texts/section_heading.dart';
 import 'package:sohoj_kart/features/shop/models/products/product_model.dart';
+import 'package:sohoj_kart/features/shop/screens/cart/cart_screen.dart';
 import 'package:sohoj_kart/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';
 import 'package:sohoj_kart/features/shop/screens/product_details/widgets/product_attribute.dart';
 import 'package:sohoj_kart/features/shop/screens/product_details/widgets/product_details_image_slider.dart';
@@ -54,7 +55,9 @@ class ProductDetailScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(const CartScreen());
+                      },
                       child: const Text('Checkout'),
                     ),
                   ),

@@ -20,7 +20,15 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(onPressed: () => Get.back(), icon:  Icon(CupertinoIcons.back, color: SKHelperFunctions.isDarkMode(context) ? Colors.white : Colors.black,)),
+        leading: IconButton(
+          onPressed: () => Get.back(),
+          icon: Icon(
+            CupertinoIcons.back,
+            color: SKHelperFunctions.isDarkMode(context)
+                ? Colors.white
+                : Colors.black,
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(

@@ -31,6 +31,7 @@ class SKHomeCategories extends StatelessWidget {
           itemCount: categoryController.featuredCategories.length,
           scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) {
+            print('This is reached');
             final category = categoryController.featuredCategories[index];
             return SKVerticalImageText(
               image: category.image,

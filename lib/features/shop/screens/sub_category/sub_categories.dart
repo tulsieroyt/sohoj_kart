@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sohoj_kart/common/widgets/appbar/appbar.dart';
-import 'package:sohoj_kart/common/widgets/images/rounded_images.dart';
 import 'package:sohoj_kart/common/widgets/products/product_cards/product_cards_horizontal.dart';
 import 'package:sohoj_kart/common/widgets/texts/section_heading.dart';
 import 'package:sohoj_kart/features/shop/controllers/category_controller.dart';
 import 'package:sohoj_kart/features/shop/models/category_model.dart';
 import 'package:sohoj_kart/features/shop/screens/all_products/all_products.dart';
-import 'package:sohoj_kart/utils/constants/image_strings.dart';
+import 'package:sohoj_kart/features/shop/screens/product_details/product_detail_screen.dart';
 import 'package:sohoj_kart/utils/constants/sizes.dart';
 import 'package:sohoj_kart/utils/helpers/cloud_helper_function.dart';
 import 'package:sohoj_kart/utils/shimmer/horizontal_product_shimmer.dart';
@@ -31,12 +30,12 @@ class SubCategoryScreen extends StatelessWidget {
           child: Column(
             children: [
               ///Banner
-              const SKRoundedImage(
-                width: double.infinity,
-                imageUrl: SKImages.gadgetBanner,
-                height: null,
-                applyImageRadius: true,
-              ),
+              // const SKRoundedImage(
+              //   width: double.infinity,
+              //   imageUrl: SKImages.gadgetBanner,
+              //   height: null,
+              //   applyImageRadius: true,
+              // ),
               const SizedBox(height: SKSizes.spaceBtwSections),
 
               ///Sub Category
@@ -53,6 +52,10 @@ class SubCategoryScreen extends StatelessWidget {
 
                     ///Record Found
                     final subCategories = snapshot.data!;
+
+                    if (subCategories.isEmpty) {
+                      return const Center(child: Text('No Data Found'));
+                    }
 
                     return ListView.builder(
                         shrinkWrap: true,
@@ -98,8 +101,13 @@ class SubCategoryScreen extends StatelessWidget {
                                         itemCount: products.length,
                                         scrollDirection: Axis.horizontal,
                                         itemBuilder: (context, index) =>
-                                            SKProductCardHorizontal(
-                                                product: products[index]),
+                                            InkWell(
+                                              child: SKProductCardHorizontal(
+                                                  product: products[index]),
+                                              onTap: (){
+                                                Get.to(ProductDetailScreen(product: products[index]));
+                                              },
+                                            ),
                                         separatorBuilder: (_, __) =>
                                             const SizedBox(
                                           width: SKSizes.spaceBtwItems,
